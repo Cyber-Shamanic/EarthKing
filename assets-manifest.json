@@ -1,6 +1,6 @@
 {
   "project": "EarthKing",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "date": "2026-11-05",
   "assets": [
     {"name":"ארמון המלך","category":"background","path":"assets/images/royal-palace.png","transparent":false},
@@ -13,6 +13,9 @@
     {"name":"קלף מלכות גב","category":"card","path":"assets/images/royal-card-back.png","transparent":false},
     {"name":"סטיקר אריה","category":"sticker","path":"assets/stickers/lion-king.png","transparent":true},
     {"name":"סטיקר ספר","category":"sticker","path":"assets/stickers/wisdom-book.png","transparent":true},
-    {"name":"סטיקר לב צדק","category":"sticker","path":"assets/stickers/justice-heart.png","transparent":true}
+    {"name":"סטיקר לב צדק","category":"sticker","path":"assets/stickers/justice-heart.png","transparent":true},
+    {"name":"ערכה חדשה של 20 סטיקרים","category":"sticker-collection","path":"assets/stickers/virtues/","count":20,"transparent":true},
+    {"name":"באנרים לארבעת השערים","category":"banner-collection","path":"assets/banners/","count":4,"transparent":false},
+    {"name":"גב קלף לכל שער","category":"card-back-collection","path":"assets/card-backs/","count":4,"transparent":false}
   ]
 }
