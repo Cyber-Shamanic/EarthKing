@@ -1,0 +1,41 @@
+/* EarthKing v0.0.3 — Royal Edition */
+:root{--bg:#080f1b;--panel:#111d2b;--line:#66532d;--gold:#f6d78c;--cream:#fff7e8;--muted:#c5b99d;--green:#94ddbb}
+body{background:radial-gradient(ellipse at 50% 0,#26304a 0,transparent 35%),linear-gradient(#070e1a,#101b27 55%,#070e1a);background-attachment:fixed}
+.wrap{max-width:1380px}
+.top{background:linear-gradient(180deg,#0c1521f0,#12202eeb);border-bottom:2px solid #a88340;box-shadow:0 8px 28px #0008;position:relative;z-index:3;padding:18px 4px}
+.logo{display:flex;align-items:center;gap:5px;font-size:27px;text-shadow:0 0 15px #cda65670}
+.brand-crown{width:62px;height:54px;object-fit:contain;filter:drop-shadow(0 0 10px #eac46c66)}
+.nav a,.quiet{background:linear-gradient(145deg,#1d2b3b,#081420);border:1px solid #8b713c;color:#f6e7c4;box-shadow:inset 0 1px #ead39a1c;transition:transform .2s,box-shadow .2s}
+.nav a:hover,.quiet:hover,.cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px #d8b46b33}
+.hero{margin:0 -22px 45px;min-height:660px;padding:72px 26px 35px;background:linear-gradient(180deg,#06101baa 0%,#071320bf 47%,#0c1728e8 85%,#09131e 100%),url('assets/images/royal-palace.png') center 38%/cover no-repeat;border-bottom:2px solid #aa874e;box-shadow:inset 0 -35px 80px #040b11,0 20px 60px #0007}
+.hero-orb{width:175px;height:140px;border:0;background:none;border-radius:0;box-shadow:none;animation:float 6s ease-in-out infinite}
+.hero-orb img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 0 25px #f6cc70a0)}
+.eyebrow{font-weight:700;color:#f8d992;letter-spacing:1.5px;text-shadow:0 0 12px #9e6f2e}
+h1{font-size:clamp(46px,6.9vw,105px);color:#fff4d9;text-shadow:0 3px 0 #644a27,0 10px 32px #000}
+h1 em{color:#ffda87;text-shadow:0 0 30px #ffc35b83}
+.hero p{color:#fff4df;max-width:750px;font-size:20px;text-shadow:0 2px 8px #000}
+.hero-actions{display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap}
+.cta{background:linear-gradient(165deg,#fff1b8,#d4a447 47%,#95652e);color:#1d1a15;border:1px solid #fff1b5;font-weight:800;box-shadow:0 6px 0 #513714,0 12px 32px #f0c26a26;transition:transform .2s,box-shadow .2s}
+.hero-actions .cta,.edition .cta{background:url('assets/images/royal-button.png') center/100% 100% no-repeat;min-width:300px;min-height:83px;display:inline-flex!important;align-items:center;justify-content:center;border:0;border-radius:0;box-shadow:none;text-shadow:0 1px #ffecb6;padding:20px 38px}
+.gold-divider{object-fit:contain;display:block;max-width:650px;width:76%;height:125px;margin:24px auto -70px;pointer-events:none}
+.stat{border:1px solid #a48245;background:linear-gradient(135deg,#243247,#0b1723);box-shadow:inset 0 1px #e9bc7624,0 12px 26px #0005}
+.stat b{color:#ffde93}
+.royal-section{border:1px solid #92733e;border-radius:25px;box-shadow:0 18px 55px #0008,inset 0 1px #ffe6a62d;background:radial-gradient(circle at top,#283344,#111d2b 65%);text-align:center;padding:46px 32px;margin:50px 0}
+.royal-section h2{font-size:clamp(27px,4vw,45px);color:#f9e3a9;text-shadow:0 2px 16px #bd9b5b3b}
+.royal-section .sub{margin:10px auto 28px;max-width:750px;color:#d7cdb8}
+.wisdom-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
+.wisdom-card{border:1px solid #b59251;background:linear-gradient(155deg,#28394a,#101d2c);padding:24px 18px;border-radius:18px;min-height:285px;box-shadow:inset 0 0 24px #d7b56a12;transition:transform .25s}
+.wisdom-card:hover{transform:translateY(-6px)}.wisdom-card span{font-size:42px}.wisdom-card h3{color:#f3d590;font-size:20px;margin:11px 0}.wisdom-card p{color:#e7e2d4;min-height:100px}
+.psalm-section{background:linear-gradient(#091827dd,#10263ae8),url('assets/images/royal-palace.png') center/cover;position:relative;overflow:hidden}
+.psalm-crown{width:180px;max-height:130px;object-fit:contain;filter:drop-shadow(0 0 22px #d4ad63a4)}
+.psalm-text{font-family:'DejaVu Serif',Georgia,serif;font-size:clamp(16px,2.1vw,22px);font-weight:700;color:#fff3d8;line-height:2.1;max-width:800px;margin:30px auto;text-shadow:0 2px 8px #000}
+.psalm-text h3{font-size:18px;color:#f9d585;border-bottom:1px solid #977647;max-width:500px;margin:25px auto 10px}
+.psalm-text p{margin:0;white-space:pre-line}
+.edition{display:grid;grid-template-columns:1fr 260px;text-align:right;align-items:center;gap:30px;background:linear-gradient(110deg,#1b3042,#101923);padding:28px 55px}.edition img{width:100%;height:230px;object-fit:contain}.edition p{font-size:18px;color:#e2d7bf}.edition a{margin-top:8px}
+.card,.daily,.panel{border-color:#866e40;box-shadow:inset 0 1px #efd69e17,0 12px 25px #0004}.card h3{color:#f7db99}.card-top{color:#dfc9a2}.card-art{background:radial-gradient(circle at top,#263a4d,#081623 70%);border:4px double #d5ac5c;box-shadow:inset 0 0 40px #bd95462e;}
+.foot{border-color:#aa8340;background:#0b1420}.quote{color:#ffe0a2}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@media(max-width:1000px){.wisdom-grid{grid-template-columns:repeat(2,1fr)}.nav{gap:5px}}
+@media(max-width:650px){.hero{min-height:570px;padding:45px 15px 26px}.gold-divider{height:80px;margin-bottom:-40px}.wisdom-grid{grid-template-columns:1fr}.wisdom-card{min-height:0}.wisdom-card p{min-height:0}.royal-section{padding:30px 16px}.edition{grid-template-columns:1fr;text-align:center;padding:25px 16px}.edition img{height:170px;order:-1}.psalm-text{font-size:15px}.brand-crown{width:47px;height:45px}.hero-actions .cta,.edition .cta{min-width:250px;min-height:70px;font-size:14px}}
+@media(prefers-reduced-motion:reduce){.hero-orb{animation:none}}
+@media print{.hero,.royal-section{display:none!important}}
