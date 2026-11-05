@@ -33,9 +33,43 @@ h1 em{color:#ffda87;text-shadow:0 0 30px #ffc35b83}
 .psalm-text p{margin:0;white-space:pre-line}
 .edition{display:grid;grid-template-columns:1fr 260px;text-align:right;align-items:center;gap:30px;background:linear-gradient(110deg,#1b3042,#101923);padding:28px 55px}.edition img{width:100%;height:230px;object-fit:contain}.edition p{font-size:18px;color:#e2d7bf}.edition a{margin-top:8px}
 .card,.daily,.panel{border-color:#866e40;box-shadow:inset 0 1px #efd69e17,0 12px 25px #0004}.card h3{color:#f7db99}.card-top{color:#dfc9a2}.card-art{background:radial-gradient(circle at top,#263a4d,#081623 70%);border:4px double #d5ac5c;box-shadow:inset 0 0 40px #bd95462e;}
+.card-art{min-height:540px;background:linear-gradient(#05142655,#081624b0),url('assets/images/royal-card.png') center/cover no-repeat;padding:80px 50px 90px;text-shadow:0 2px 5px #000,0 0 10px #000}.card-art p{font-size:15px;font-weight:700}.card-art h3{font-size:31px;color:#ffe6ac;text-shadow:0 0 12px #000}
 .foot{border-color:#aa8340;background:#0b1420}.quote{color:#ffe0a2}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 @media(max-width:1000px){.wisdom-grid{grid-template-columns:repeat(2,1fr)}.nav{gap:5px}}
 @media(max-width:650px){.hero{min-height:570px;padding:45px 15px 26px}.gold-divider{height:80px;margin-bottom:-40px}.wisdom-grid{grid-template-columns:1fr}.wisdom-card{min-height:0}.wisdom-card p{min-height:0}.royal-section{padding:30px 16px}.edition{grid-template-columns:1fr;text-align:center;padding:25px 16px}.edition img{height:170px;order:-1}.psalm-text{font-size:15px}.brand-crown{width:47px;height:45px}.hero-actions .cta,.edition .cta{min-width:250px;min-height:70px;font-size:14px}}
 @media(prefers-reduced-motion:reduce){.hero-orb{animation:none}}
 @media print{.hero,.royal-section{display:none!important}}
+
+/* v0.0.4 — The Royal Treasure Vault */
+#wisdom{position:relative;background:linear-gradient(180deg,#061320e9,#071927e7),url('assets/images/royal-library.png') center/cover;transition:background .25s}
+body.scene-palace #wisdom{background:linear-gradient(180deg,#061320e9,#071927e7),url('assets/images/royal-palace.png') center/cover}
+#wisdom .wisdom-card{background:linear-gradient(#14293fe9,#0b1a2df0);box-shadow:0 5px 25px #0009}
+.asset-vault{background:linear-gradient(165deg,#101c31,#1c2940 55%,#101b2e);position:relative;overflow:hidden}
+.asset-vault:before,.asset-vault:after{content:'';position:absolute;top:16px;width:80px;height:120px;background:url('assets/images/royal-frame.png') center/contain no-repeat;opacity:.5;pointer-events:none}
+.asset-vault:before{right:4px;transform:rotate(90deg)}.asset-vault:after{left:4px;transform:rotate(-90deg)}
+.vault-crest{height:146px;max-width:180px;object-fit:contain;filter:drop-shadow(0 0 24px #cfa95966)}
+.asset-filters{display:flex;gap:9px;align-items:center;justify-content:center;flex-wrap:wrap;margin:26px auto}
+.asset-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px;text-align:right}
+.asset-tile{background:linear-gradient(#203149,#0d192a);border:1px solid #876a3b;border-radius:18px;overflow:hidden;box-shadow:0 10px 28px #0006;transition:transform .25s,border .25s;display:flex;flex-direction:column}
+.asset-tile:hover{transform:translateY(-4px);border-color:#ffdf94}
+.asset-preview{height:215px;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle,#394454,#081728);overflow:hidden;position:relative}
+.asset-preview:before{content:'';position:absolute;inset:0;background:linear-gradient(45deg,#ffffff08 25%,transparent 25%,transparent 75%,#ffffff08 75%),linear-gradient(45deg,#ffffff08 25%,transparent 25%,transparent 75%,#ffffff08 75%);background-size:26px 26px;background-position:0 0,13px 13px;opacity:.4}
+.asset-preview img{position:relative;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 5px 12px #0007);transition:transform .3s}
+.asset-tile:hover img{transform:scale(1.04)}
+.asset-info{padding:15px;display:flex;flex-direction:column;gap:7px;flex:1}
+.asset-info h3{font-size:17px;color:#f5d690;margin:0}.asset-info p{font-size:12px;color:#bdc8cb;margin:0;min-height:38px}
+.asset-actions{display:flex;gap:8px;margin-top:auto;padding-top:8px}.asset-actions a,.asset-actions button{flex:1;text-align:center;padding:8px 7px;font-size:12px;border-radius:9px}
+.vault-tools{display:flex;justify-content:space-between;align-items:center;gap:22px;flex-wrap:wrap;margin-top:28px;padding:22px;border:1px solid #876d43;border-radius:16px;background:#0a1725b3;text-align:right}
+.vault-tools h3{margin:0;color:#f0d58d}.vault-tools p{margin:0;color:#d7cdb6;font-size:13px}
+.palette-actions{display:flex;gap:8px;flex-wrap:wrap}.palette-actions button[aria-pressed="true"]{background:#f3d189;color:#161e2a}
+.royal-section.psalm-section{background:linear-gradient(#071320d9,#071320e0),url('assets/images/royal-library.png') center/cover}
+.card-art{background:linear-gradient(#05142677,#081624c6),url('assets/images/royal-card.png') center/cover no-repeat}
+.card-art .crown img{height:68px;object-fit:contain}
+.card-back{height:550px;background:url('assets/images/royal-card-back.png') center/contain no-repeat}
+.flip-control{display:flex;justify-content:center;gap:10px;margin:14px 0}
+.royal-sticker-strip{display:flex;justify-content:center;gap:20px;align-items:center;margin:20px auto;flex-wrap:wrap}.royal-sticker-strip img{height:95px;width:95px;object-fit:contain;filter:drop-shadow(0 4px 13px #e0bb6266);animation:float 5s ease-in-out infinite}
+@media(max-width:1100px){.asset-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:750px){.asset-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.asset-preview{height:175px}}
+@media(max-width:490px){.asset-grid{grid-template-columns:1fr}.asset-preview{height:240px}.asset-tile{max-width:400px;width:100%;margin:auto}.vault-tools{justify-content:center;text-align:center}}
+@media(prefers-reduced-motion:reduce){.royal-sticker-strip img{animation:none}}

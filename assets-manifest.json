@@ -1,0 +1,18 @@
+{
+  "project": "EarthKing",
+  "version": "0.0.4",
+  "date": "2026-11-05",
+  "assets": [
+    {"name":"ארמון המלך","category":"background","path":"assets/images/royal-palace.png","transparent":false},
+    {"name":"ספריית החכמה","category":"background","path":"assets/images/royal-library.png","transparent":false},
+    {"name":"כתר המלכות","category":"decoration","path":"assets/images/royal-crown.png","transparent":true},
+    {"name":"מסגרת אופקית","category":"decoration","path":"assets/images/royal-frame.png","transparent":true},
+    {"name":"כפתור זהב","category":"decoration","path":"assets/images/royal-button.png","transparent":true},
+    {"name":"מסגרת אנכית","category":"decoration","path":"assets/images/royal-panel.png","transparent":true},
+    {"name":"קלף מלכות חזית","category":"card","path":"assets/images/royal-card.png","transparent":false},
+    {"name":"קלף מלכות גב","category":"card","path":"assets/images/royal-card-back.png","transparent":false},
+    {"name":"סטיקר אריה","category":"sticker","path":"assets/stickers/lion-king.png","transparent":true},
+    {"name":"סטיקר ספר","category":"sticker","path":"assets/stickers/wisdom-book.png","transparent":true},
+    {"name":"סטיקר לב צדק","category":"sticker","path":"assets/stickers/justice-heart.png","transparent":true}
+  ]
+}

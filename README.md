@@ -1,13 +1,13 @@
 # 👑 EarthKing — מלך הארץ הזאת
 
-**גרסה:** 0.0.3  
+**גרסה:** 0.0.4  
 **תאריך:** 05.11.2026 · כ״ה בחשוון תשפ״ז  
 **יוצר:** לאון יעקובוב (AnLoMinus) — Cyber Shamanic
 
 ## הפעלה עצמאית
 
 1. חלץ את ZIP.
-2. היכנס לתיקייה הראשית `EarthKing_v0.0.3`.
+2. היכנס לתיקייה הראשית `EarthKing_v0.0.4`.
 3. להפעלה מלאה של חלוניות CHANGELOG ו־TODO ושל מזמור המלכות, הפעל שרת מקומי, למשל `python3 -m http.server 8000` מתוך תיקיית הפרויקט, ואז פתח `http://localhost:8000`.
 4. שאר פעולות האתר, לרבות הצגת 44 המידות והסימונים, פועלות גם בפתיחת `index.html` ישירות; בפתיחה זו חלק מהדפדפנים יחסמו קריאת קובצי Markdown.
 
@@ -15,7 +15,9 @@
 
 - 44 מידות מקוריות, ב־4 שערים (11 בכל שער), וספר חכמה ומלכות עם שאלות ותרגול.
 - מזמור מקורי מנוקד ומחורז בארבעה בתים, וחוברת PDF A5 בת 33 עמודים.
-- חמישה נכסים גרפיים מקוריים: רקע ארמון, כתר שקוף, מסגרת שקופה, כפתור זהב שקוף וקלף מלכותי מאויר.
+- 11 נכסים גרפיים מקוריים: שני רקעים, ארבעה עיטורים וכפתורים, שני צדדי קלפים ושלושה סטיקרים שקופים.
+- גלריית נכסים באתר עם סינון, תצוגה מוגדלת והורדת PNG לכל פריט.
+- מעבר בין חזית לגב של קלף ובחירת רקע אתר (ארמון או ספרייה).
 - חיפוש, סינון, מועדפים, מידה יומית.
 - סימון משימות ומד התקדמות.
 - קלף נפרד לכל מידה, העתקה ושיתוף.
@@ -29,12 +31,14 @@
 ## מבנה החבילה
 
 ```text
-EarthKing_v0.0.3/
+EarthKing_v0.0.4/
   README.md
   CHANGELOG.md
   TODO.md
   BOOK.md
   ROYAL_PSALM.md
+  ASSETS.md
+  assets-manifest.json
   44-מידות.json
   44-מידות.md
   index.html
@@ -46,6 +50,12 @@ EarthKing_v0.0.3/
     images/royal-frame.png
     images/royal-button.png
     images/royal-card.png
+    images/royal-library.png
+    images/royal-panel.png
+    images/royal-card-back.png
+    stickers/lion-king.png
+    stickers/wisdom-book.png
+    stickers/justice-heart.png
     pdf/EarthKing_Royal_Booklet_v0.0.3.pdf
   scripts/
     export-data.mjs
